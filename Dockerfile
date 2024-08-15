@@ -20,4 +20,4 @@ RUN unzip /tmp/pb.zip -d /app/pb/
 EXPOSE 8090
 EXPOSE 8077
 
-CMD tail -f /dev/null
+ENTRYPOINT ["/app/docker_entrypoint.sh"]
